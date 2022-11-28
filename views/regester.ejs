@@ -1,0 +1,59 @@
+
+<% if (message) { %>
+
+          <div class="ml-80 w-96 ">   <p style="background-color: red;" class="absolute  text-white font-bold px-8 rounded-lg py-2 mt-10 ml-96"><%= message %> <a href="/regester"> <i class="fa-solid ml-10 rounded-full hover:scale-105 transition  bg-blue-500 h-9 w-9 pl-3 pt-2 text-xl fa-xmark"></i></a></p> </div>   
+          <% } %> 
+    
+
+
+
+
+<!-- loging from desgin -->
+
+<div class=" flex items-center h-screen w-screen bg-neutral-200 justify-center">
+
+    <div style="height:440px; width:700px;" class=" grid grid-cols-2  border rounded-xl">
+               <!-- login img desgin -->
+              <div class="border-r-2  " >
+                      
+                     <img class="h-full w-full object-cover rounded-l-xl" src="/img/regester.jpg"  alt="">
+  
+              </div>
+              <!-- login form desgin -->
+              <div class=" w-full  bg-white pt-5 rounded-r-xl p-3">
+                      <form class="space-y-3 h-full " action="/regester  " method="post">
+  
+                           <div>
+                                <h3 class="font-extrabold text-3xl">Sign up</h3>
+                           </div>
+                           <!-- <p>not match</p> -->
+                           <div class="font-semibold text-slate-700">
+                                  <label for="name">Name</label><br>
+                                <input name="name" class="border pl-3 rounded-md w-full h-10" type="text" id="name">
+                           </div>
+                           <div class="font-semibold text-slate-700">
+                                  <label for="email">Email</label><br>
+                                <input name="email" class="border pl-3 rounded-md w-full h-10" type="email" id="email">
+                           </div>
+                           <div class="font-semibold justify-center text-slate-700">
+                                  <label for="password">Password</label><br>
+                                <input class="border rounded-md  pl-3 w-full h-10" name="password" type="password" id="password">
+                           </div>
+                           <div class="font-semibold text-slate-700">
+                                 
+                              <button class="bg-blue-500 text-white h-10 w-full rounded-md" type="submit">Regester now</button>
+  
+                           </div>
+                          <div class="flex justify-between text-sm  text-blue-600">
+                               <a href="">Forgot password</a>
+                               <a href="/login">log in now</a>
+  
+                              </div>
+  
+                      </form>
+                     
+              </div>
+  
+     </div>
+      
+    </div>

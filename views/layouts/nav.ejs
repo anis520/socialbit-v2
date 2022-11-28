@@ -1,0 +1,54 @@
+     <!-- profile left -->
+     <div class="border bg-white w-full rounded-lg col-span-2">
+        <div class="border-b-2  border-gray-400 mx-2">
+
+          <% if (user.img) { %>
+            <img src="/img/allusers/<%= user.img %>" class=" h-24 mt-2 ml-24  object-cover rounded-full w-24" alt="">
+           
+          <% }else{%>
+           <img src="/img/user-profile-image.png" class=" h-24 mt-2 ml-24 object-cover  rounded-full w-24" alt="">
+            <% } %> 
+           <p class="font-semibold text-lg   w-11/12 ml-20"><%=user.name%> </p>
+        </div>
+        <div class="grid mt-5 grid-rows-6 gap-2">
+
+         <a href="/" class="no-underline">
+            <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+             <i class="fa-solid mr-3 fa-user"></i>profile
+            </button>
+          </a>
+         <a href="/gallary" class="no-underline">
+          <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+           <i class="fa-solid fa-images mr-3"></i>           Gallary
+            </button>
+          </a>
+         <a href="/edit" class="no-underline">
+          <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+           <i class="fa-solid fa-pen-to-square mr-3"></i>                     Edit
+            </button>
+          </a>
+         <a href="/changepassword" class="no-underline">
+          <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+           <i class="fa-solid fa-lock-open mr-3"></i>
+              change password
+            </button>
+          </a>
+         <a href="/changephoto" class="no-underline">
+          <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+           <i class="fa-solid fa-camera-retro mr-3"></i>
+              profile photo
+            </button>
+          </a>
+         <a href="/logout" class="no-underline">
+          <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+            <i class="fa-solid mr-3 fa-right-from-bracket"></i>
+              Logout
+            </button>
+          </a>
+      
+
+          </div>
+
+
+
+   </div>

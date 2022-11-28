@@ -1,0 +1,71 @@
+  <!-- loging from desgin -->
+  
+<% if (message) { %>
+
+   <% if (status) { %>
+    <div class="ml-96 w-96 ">   <p class="absolute bg-blue-200    text-gray-700 font-bold px-8 rounded-lg py-2 mt-28 " style="margin-left: 27rem;"><%= message %> <a href="/gallary"> <i class="fa-solid ml-10 rounded-full hover:scale-105 transition  bg-black h-9 w-9 pl-3 pt-2 bg-blue-500 text-xl fa-xmark"></i></a></p> </div>   
+    
+    <% }else{ %>
+      <div class="ml-96 w-96 ">   <p class="absolute    text-white font-bold px-8 rounded-lg py-2 mt-28 " style="margin-left: 27rem;background: red;"><%= message %> <a href="/gallary"> <i class="fa-solid ml-10 rounded-full hover:scale-105 transition  bg-black h-9 w-9 pl-3 pt-2 bg-blue-500 text-xl fa-xmark"></i></a></p> </div>   
+
+       <% } %> 
+<% } %>
+  
+  
+
+  <div class=" flex items-center  h-screen w-screen  bg-neutral-200  justify-center">
+
+    <div  class=" h-4/6 w-8/12 grid gap-2 grid-cols-6 mb-10   rounded-xl">
+  
+        <%- include('./layouts/nav.ejs')%> 
+                 <!-- profile right -->
+              <div class="border bg-white  rounded-lg col-span-4  ">
+                           
+                  
+                  <div class="m-8">
+                      <form class="space-y-3 h-full " action="/gallary" method="post" enctype="multipart/form-data">
+                        
+                          <div>
+                               <h3 class="font-semibold  text-3xl">Gallary photo</h3>
+                          </div>
+  
+                          <hr class="pb-3">
+                            <div class=" prev w-full h-28  overflow-hidden gap-2 grid  grid-cols-4 pl-4">
+                              <label for="gallaryphoto">
+                              <img src="/img/0ab2cb8c7bc008f3b8b91a4b352c55f2.gif" class=" rounded-lg  object-cover border h-28 w-28" alt=""></label>
+                              <label for="gallaryphoto">
+  
+                                  
+                              </label>
+                               
+                            </div>
+                         
+                          <label for="gallaryphoto">
+                                     
+                                    <div class="items-center flex justify-between">
+                                      <!-- <i class="fa-solid fa-image text-4xl text-slate-700"></i>
+                                      <div>
+                                            
+                                      </div> -->
+                                  
+                                    </div>
+                                  <input multiple  type="file" name="gallary" class="hidden" id="gallaryphoto">
+  
+                          </label>
+                        
+                          <div class="font-semibold pt-28 text-slate-700">
+                                
+                             <button class="bg-blue-600 text-white h-10 w-full rounded-md" type="submit">Upload</button>
+  
+                          </div>
+                          
+  
+                     </form>
+                  </div>
+  
+  
+              </div>
+  
+    </div>
+      
+    </div>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body >
+
+  <!-- loging from desgin -->
+  <!-- <div  class="alert   flex items-center justify-center   alert-info alert-dismissible fade show w-7/12 mx-auto  " role="alert">
+    <strong class="ml-20">Login successfull </strong>! welcome to your profile
+    <i   class="fa-solid fa-xmark  ml-20 text-2xl" data-bs-dismiss="alert" aria-label="Close"></i>
+  </div> -->
+
+       <div class="ml-80 w-96 ">   <p class="absolute bg-blue-200  text-gray-700 font-bold px-8 rounded-lg py-2 mt-28 ml-96"> Login successfull  <a href="profile.html"> <i class="fa-solid ml-10 rounded-full hover:scale-105 transition  bg-black h-9 w-9 pl-3 pt-2 text-xl fa-xmark"></i></a></p> </div>   
+
+  <div class=" flex items-center  h-screen w-screen  bg-neutral-200   justify-center">
+
+  <div  class=" h-5/6 w-8/12 grid gap-2 grid-cols-6 mb-10   rounded-xl">
+
+            <!-- profile left -->
+            <div class="border bg-white w-full rounded-lg col-span-2">
+                 <div class="border-b-2  border-gray-400 mx-2">
+                    <img src="/public/img/user-profile-image.png" class=" h-24 mt-2 ml-24  rounded-full w-24" alt="">
+                    <p class="font-semibold text-lg   w-11/12 ml-20">Md Anisul hoque</p>
+                 </div>
+                 <div class="grid mt-5 grid-rows-6 gap-2">
+
+                  <a href="profile.html" class="no-underline">
+                     <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                      <i class="fa-solid mr-3 fa-user"></i>profile
+                     </button>
+                   </a>
+                  <a href="gallary.html" class="no-underline">
+                   <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                    <i class="fa-solid fa-images mr-3"></i>           Gallary
+                     </button>
+                   </a>
+                  <a href="edit.html" class="no-underline">
+                   <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                    <i class="fa-solid fa-pen-to-square mr-3"></i>                     Edit
+                     </button>
+                   </a>
+                  <a href="changepassword.html" class="no-underline">
+                   <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                    <i class="fa-solid fa-lock-open mr-3"></i>
+                       change password
+                     </button>
+                   </a>
+                  <a href="changephoto.html" class="no-underline">
+                   <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                    <i class="fa-solid fa-camera-retro mr-3"></i>
+                       profile photo
+                     </button>
+                   </a>
+                  <a href="login.html" class="no-underline">
+                   <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                     <i class="fa-solid mr-3 fa-right-from-bracket"></i>
+                       Logout
+                     </button>
+                   </a>
+               
+ 
+                   </div>
+
+
+
+            </div>
+
+               <!-- profile right -->
+            <div  class="border bg-white rounded-lg col-span-4 grid grid-rows-6 ">
+                                 
+                <div class=" border-gray-400 bg-center   border-b-2 bg-cover m-1 row-span-2  rounded-t-lg" style="background-image:url('../public/img/regester.jpg');">
+                    <img src="/public/img/user-profile-image.png" class="  h-28 absolute mt-32 ring-2 ring-gray-400 ml-5  rounded-full w-28 bg-violet-50" alt="">
+                  
+
+                </div >
+                  <p class=" text-xl font-mono    w-11/12 ml-36 mt-2">Md Anisul</p>
+                  <p class="  font-semibold  text-sm  absolute  w-11/12 ml-36 mt-52">50<span> followers </span> 20<span> following</span></p>
+                  <p class="  font-semibold   text-sm absolute   text-white  ml-72  mt-48"><a class="no-underline ml-52 rounded-md p-2  text-white bg-blue-600" href="info.html"><i class="text-lg fa-solid fa-circle-info"></i> My info </a>
+                    
+                  </p>
+                  <div class="ml-5 h-64  w-5/12 p-2 absolute mt-64 grid gap-2 border rounded-md grid-cols-3 overflow-scroll">
+                    <div class="h-44 w-44 flex items-center justify-center">
+                        <div class="h-16  hover:scale-110 border-x-blue-600 transition  w-32 flex justify-center items-center border-4  rounded-lg">
+                               <i class="fa-solid fa-images text-blue-600 text-xl mr-3"></i><span class="font-semibold text-sm"> My photos</span> 
+                        </div>
+                      
+                    </div>
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    <img src="./img/user-profile-image.png" class="h-44 border rounded-lg object-cover w-40" alt="">
+                    
+                   
+                     
+
+                  </div>               
+
+
+            </div>
+
+  </div>
+ 
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

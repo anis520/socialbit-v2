@@ -1,0 +1,66 @@
+
+  <!-- loging from desgin -->
+  <!-- <div class="ml-80 w-96 ">   <p class="absolute bg-blue-200    text-gray-700 font-bold px-8 rounded-lg py-2 mt-28 ml-96"> Login successfull  <a href="profile.html"> <i class="fa-solid ml-10 rounded-full hover:scale-105 transition  bg-black h-9 w-9 pl-3 pt-2 bg-blue-500 text-xl fa-xmark"></i></a></p> </div>    -->
+
+  <div class=" flex items-center  h-screen w-screen  bg-neutral-200   justify-center">
+
+    <div  class=" h-5/6 w-8/12 grid gap-2 grid-cols-6 mb-10   rounded-xl">
+  
+        <%- include('./layouts/nav.ejs')%> 
+                 <!-- profile right -->
+              <div  class="border bg-white rounded-lg col-span-4 grid grid-rows-6 ">
+                                   
+                  <div class=" border-gray-400 bg-center   border-b-2 bg-cover m-1 row-span-2  rounded-t-lg" 
+                  
+                  <% if (user.cover) { %>
+                    style="background-image:url('/img/allusers/<%=user.cover%>');"
+                   
+                  <% }else{%>
+                  style="background-image:url('../img/neo-album-cover.gif');"
+                  <% } %> 
+                  
+                  >
+                      <!-- <img src="/img/user-profile-image.png" class="  h-28 absolute mt-32 ring-2 ring-gray-400 ml-5  rounded-full w-28 bg-violet-50" alt=""> -->
+                    
+  
+                  </div >
+                    <!-- <p class=" text-xl font-mono    w-11/12 ml-36 mt-2">Md Anisul</p>
+                    <p class="  font-semibold  text-sm  absolute  w-11/12 ml-36 mt-52">50<span> followers </span> 20<span> following</span></p>
+                    <p class="  font-semibold   text-sm absolute   text-white  ml-72  mt-48"><a class="no-underline ml-52 rounded-md p-2  text-white bg-blue-600" href="info.html"><i class="text-lg fa-solid fa-circle-info"></i> My info </a>
+                      
+                    </p> -->
+                    <div class="ml-20 mr-2 h-64  row-span-4 w-4/12 p-2 absolute mt-56 grid grid-cols-2  border rounded-lg  ">
+                      
+                         <div class="">
+                        
+                         <% if (user.img) { %>
+                          
+                          <img src="/img/allusers/<%=user.img %> " class="w-full h-full rounded-l-lg object-cover" alt="">
+                         <% }else{ %>
+                          <img src="../img/user-profile-image.png" class="w-full h-full rounded-l-lg object-cover" alt="">
+                          <% } %> 
+                        </div>
+                         <div class=" mt-3 ">
+                              <span class="text-lg pl-5 font-bold text-slate-700 "><%=user.name%> </span><br>   
+                              <span class="text-md pl-5 font-light font-mono text-slate-700 "><%= user.email %> </span> 
+                              <div class="space-y-3">
+                                   <p class="pl-5 text-slate-500 text-sm">Username : <%=user.username  %> </p>
+                              <p class="pl-5 text-slate-500 text-sm">Location : <%= user.location %> </p>
+                              <p class="pl-5 text-slate-500 text-sm">Number : <%= user.number %> </p>
+                              <p class="pl-5 text-slate-500 text-sm">Gender  : <%= user.gender %> </p>
+                              </div>  
+                           
+                              <button class=" text-sm mt-8 h-6 w-7/12  ml-5 text-white rounded-lg bg-blue-500">Add friend</button>
+  
+                         </div>
+                  
+                  
+                  
+                  </div>               
+  
+  
+              </div>
+  
+    </div>
+   
+    </div>

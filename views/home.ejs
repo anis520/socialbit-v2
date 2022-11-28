@@ -1,0 +1,82 @@
+ 
+      <% if (message) { %>
+
+        <div class="ml-80 w-96 ">   <p class="absolute bg-blue-200    text-gray-700 font-bold px-8 rounded-lg py-2 mt-28 ml-96"> <%= message %>  <a href="/"> <i class="fa-solid ml-10 rounded-full hover:scale-105 transition  bg-black h-9 w-9 pl-3 pt-2 bg-blue-500 text-xl fa-xmark"></i></a></p> </div>   
+       
+      <% } %>
+
+
+
+
+
+
+
+
+
+  <div class=" flex items-center  h-screen w-screen  bg-neutral-200   justify-center">
+
+  <div  class=" h-5/6 w-8/12 grid gap-2 grid-cols-6 mb-10   rounded-xl">
+
+
+        <%- include('./layouts/nav.ejs')%> 
+
+
+   
+               <!-- profile right -->
+            <div  class="border bg-white rounded-lg col-span-4 grid grid-rows-6 ">
+                                 
+                <div class=" border-gray-400 bg-center   border-b-2 bg-cover m-1 row-span-2  rounded-t-lg" 
+                
+                <% if (user.cover) { %>
+                  style="background-image:url('/img/allusers/<%= user.cover%>');"
+                 
+                <% }else{%>
+                style="background-image:url('/img/neo-album-cover.gif');"
+                <% } %> 
+                
+                >
+                     
+                  <% if (user.img) { %>
+                    <img src="/img/allusers/<%= user.img%>" class="  h-28 absolute mt-32 ring-2 ring-gray-400 ml-5 object-cover  rounded-full w-28 bg-violet-50" alt="">
+                   
+                  <% }else{%>
+                  
+                  <img src="/img/user-profile-image.png" class="  h-28 absolute mt-32 ring-2 ring-gray-400 ml-5  rounded-full w-28 bg-violet-50" alt="">
+                  
+                 <% } %> 
+                </div >
+                  <p class=" text-xl font-mono    w-11/12 ml-36 mt-2"><%=user.name%> </p>
+                  <p class="  font-semibold  text-sm  absolute  w-5/12 ml-36 mt-52">50<span> followers </span> 20<span> following</span></p>
+                  <p class="  font-semibold   text-sm absolute   text-white  ml-72  mt-48"><a class="no-underline ml-52 rounded-md p-2  text-white bg-blue-600" href="/info"><i class="text-lg fa-solid fa-circle-info"></i> My info </a>
+                    
+                  </p>
+                  <div class="ml-5 h-64  w-5/12 p-2 absolute mt-64 grid gap-2 border rounded-md grid-cols-3 overflow-scroll">
+                    <div class="h-44 w-44 flex items-center justify-center">
+                        <div class="h-16  hover:scale-110 border-x-blue-600 transition  w-32 flex justify-center items-center border-4  rounded-lg">
+                               <i class="fa-solid fa-images text-blue-600 text-xl mr-3"></i><span class="font-semibold text-sm"> My photos</span> 
+                        </div>
+                      
+                    </div>
+
+                <% user.gallary.forEach((element)=> { %>
+                 
+                  <img src="/img/allusers/<%=element%>" class="h-44 border rounded-lg object-cover w-40" alt="">
+                <% }) %>
+
+
+                    
+                    
+ 
+                   
+                     
+
+                  </div>               
+
+
+            </div>
+
+  </div>
+ 
+  </div>
+
+ 

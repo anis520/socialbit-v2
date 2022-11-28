@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- loging from desgin -->
+
+  <div class=" flex items-center  h-screen w-screen  bg-neutral-200  justify-center">
+
+  <div  class=" h-4/6 w-8/12 grid gap-2 grid-cols-6 mb-10   rounded-xl">
+
+          <!-- profile left -->
+          <div class="border bg-white w-full rounded-lg col-span-2">
+            <div class="border-b-2  border-gray-400 mx-2">
+               <img src="/public/img/user-profile-image.png" class=" h-24 mt-2 ml-24  rounded-full w-24" alt="">
+               <p class="font-semibold text-lg   w-11/12 ml-20">Md Anisul hoque</p>
+            </div>
+            <div class="grid mt-5 grid-rows-6 gap-2">
+
+             <a href="profile.html">
+                <button class="hover:bg-blue-600 transition visited:ring-2 visited:ring-blue-500 ring-offset-2  visited:bg-blue-600 visited::text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                 <i class="fa-solid mr-3 fa-user"></i>profile
+                </button>
+              </a>
+             <a href="gallary.html">
+              <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+               <i class="fa-solid fa-images mr-3"></i>           Gallary
+                </button>
+              </a>
+             <a href="edit.html">
+              <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+               <i class="fa-solid fa-pen-to-square mr-3"></i>                     Edit
+                </button>
+              </a>
+             <a href="changepassword.html">
+              <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+               <i class="fa-solid fa-lock-open mr-3"></i>
+                  change password
+                </button>
+              </a>
+             <a href="changephoto.html">
+              <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+               <i class="fa-solid fa-camera-retro mr-3"></i>
+                  profile photo
+                </button>
+              </a>
+             <a href="login.html">
+              <button class="hover:bg-blue-600 transition focus:ring-2 focus:ring-blue-500 ring-offset-2  focus:bg-blue-600 focus:text-white  rounded-lg   flex items-center justify-start pl-5  font-bold  p-2 ml-8 text-slate-700 hover:text-white h-10 w-9/12">
+                <i class="fa-solid mr-3 fa-right-from-bracket"></i>
+                  Logout
+                </button>
+              </a>
+          
+
+              </div>
+
+
+
+       </div>
+
+               <!-- profile right -->
+            <div class="border bg-white  rounded-lg col-span-4  ">
+                         
+                
+                <div class="m-8">
+                    <form class="space-y-4 h-full " action="">
+
+                        <div>
+                             <h3 class="font-semibold   text-3xl">Edit info</h3>
+                        </div>
+                        <!-- <p>not match</p> -->
+                        <hr>
+                        <div class="font-semibold   text-slate-700">
+                               <label for="oldpass">User name</label><br>
+                             <input class="border  rounded-md w-full h-10" type="password" id="oldpass">
+                        </div>
+                        <div class="font-semibold text-slate-700">
+                               <label for="newpass">Email</label><br>
+                             <input class="border rounded-md w-full h-10" type="password" id="newpass">
+                        </div>
+                        <div class="font-semibold justify-center text-slate-700">
+                               <label for="confpass">Location</label><br>
+                             <input class="border rounded-md    w-full h-10" type="password" id="confpass">
+                        </div>
+                        <div class="font-semibold justify-center text-slate-700">
+                               <label for="confpass">Number</label><br>
+                             <input class="border rounded-md    w-full h-10" type="password" id="confpass">
+                        </div>
+                        <div class="font-semibold justify-center text-slate-700">
+                               <label for="confpass">Gender</label><br>
+                             <input class="border rounded-md    w-full h-10" type="password" id="confpass">
+                        </div>
+                      
+                        <div class="font-semibold text-slate-700">
+                              
+                           <button class="bg-blue-600 text-white h-10 w-full rounded-md" type="submit">Update</button>
+
+                        </div>
+                        
+
+                   </form>
+                </div>
+
+
+            </div>
+
+  </div>
+    
+  </div>
+
+ 
+</body>
+</html>
